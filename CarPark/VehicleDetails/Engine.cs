@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarPark
+namespace CarPark.VehicleDetails
 {
     class Engine
     {
@@ -12,6 +12,9 @@ namespace CarPark
         public Engine(int power, double volume, string type, string serialNumber)
         {
             Power = power;
+            if (volume <= 0)
+                throw new Exception($"Sorry, but engine volume cannot be equal '{volume}'. Please check the input.");
+
             Volume = volume;
             Type = type;
             SerialNumber = serialNumber;

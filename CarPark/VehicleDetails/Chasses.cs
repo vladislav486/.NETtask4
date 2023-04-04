@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarPark
+namespace CarPark.VehicleDetails
 {
     class Chasses
     {
         public Chasses(int numberOfWheels, int number, int loadCapacity)
         {
+            if (numberOfWheels <= 0)
+                throw new Exception($"Sorry, the vehicle cannot be created with {numberOfWheels} amount of wheels. Please check the input");
+            
             NumberOfWheels = numberOfWheels;
             Number = number;
             LoadCapacity = loadCapacity;

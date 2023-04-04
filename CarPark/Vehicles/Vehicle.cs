@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CarPark.VehicleDetails;
 
-namespace CarPark
+namespace CarPark.Vehicles
 {
     internal abstract class Vehicle
     {
@@ -23,9 +24,9 @@ namespace CarPark
         public Chasses Chasses { get; set; }
         public string VehicleType { get; protected set; }
 
-        public void TurnOnEngine() 
+        public void TurnOnEngine()
         {
-        
+
         }
 
     }

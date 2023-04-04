@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CarPark.VehicleDetails;
+using CarPark.Vehicles;
 
 namespace CarPark
 {
@@ -22,7 +24,7 @@ namespace CarPark
             Chasses chasses4 = new Chasses(10, 7128, 2200);
             Chasses chasses5 = new Chasses(2, 6512, 200);
 
-            Transmission transmission1 = new Transmission("Automatic Transmission", 5, "Borgwarner Inc.");
+            Transmission transmission1 = new Transmission("Automatic Transmission", -5, "Borgwarner Inc.");
             Transmission transmission2 = new Transmission("Manual Transmission", 6, "Aw North Carolina, Inc.");
             Transmission transmission3 = new Transmission("Automated Manual Transmission", 5, "Dana Inc.");
 
